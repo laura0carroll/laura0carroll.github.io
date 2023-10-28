@@ -1,0 +1,16 @@
+---
+title: "Laura O'Carroll's Personal Website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+
+# This is Laura's wesbite. 
+
+
+## Find me online
+
+* [Github](https://github.com/laura0carroll)
+* [Email](lgo2107@cumc.columbia.edu)

@@ -10,3 +10,69 @@ output:
 
 
 
+# Professional Experience
+### Senior Policy Analyst, Chicago Public Health Dept. 
+2023 - Current 
+
+* Manage policy research and development to advance health, equity, and justice across a broad range of public health policy issues, offering strategic in-sight on best and promising practices in equitable governance and policymaking.
+
+### Research Consultant, Columbia University Center on Poverty and Social Policy
+2023 – 2023 
+
+* Serve as data scientist and primary child nutrition subject matter expert for the development of the nation's largest COVID-policy related data project
+
+* Harmonize diverse data sets and develop case studies of state-specific policies and practices related to nutrition program administration, including SNAP, P-EBT, USDA FNS waivers
+
+* Support research topics including Medicaid, unemployment insurance, housing supports
+
+* Design, develop and manage processes and procedures for collaborative data use
+
+* Utilize advanced statistical modeling techniques and data visualization to support decision-making by agency administrators, program experts, and policy makers
+
+### Public Policy Manager, Greater Chicago Food Depository
+2020 – 2023
+
+* Led analysis & visualization to drive data-based policy agendas
+
+* Orchestrated multiple lanes of qualitative and quantitative research projects simultaneously
+
+* Managed junior staff and external contractors and ensured consistent use of data
+
+* Oversaw research design including sampling methodology, recruited study participants statewide, facilitated focus groups, cleaned data, conducted analysis and modeling, drafted and finalized reports, memos, spreadsheets and other materials for policymakers and researchers
+
+* Served as issue expert focusing on child hunger, agricultural systems and procurement, federal nutrition programming, and root causes analysis of food insecurity and poverty
+
+* Championed anti-racist policy analysis across agenda setting, legislative development, and program design
+
+* Built connections across cross-functional teams to navigate changing processes & agendas
+
+* Coordinated diverse coalitions of stakeholders to unite around complex strategic goals
+
+### Research Associate, Global Food & Agriculture Program, Chicago Council on Global Affairs
+2017 – 2019
+
+* Led data analysis and visualization projects for a $10 million international development research portfolio
+
+* Designed database systems, coordinated with international partners, and developed data tools to advance policy agendas in federal and international contexts
+
+### Senior Project Specialist, Feeding America
+2015 – 2017
+
+* Managed reporting, impact tracking, and technical assistance to stakeholders for over $3 million in public health programming
+
+# Education
+### Columbia University, Mailman School of Public Health
+Masters of Public Health (MPH): Sociomedical Sciences
+
+Concentration: qualitative/quantitative research, data visualization, program evaluation, survey design, social determinates of
+health, social policy experiments, racial equity, biostatistics, epidemiology, SAS, ArcGIS, R, database design, systems analysis
+
+* Public Health Research Methods Certificate
+
+* Research assistant, École des hautes études en santé publique (EHESP) School of Public Health - Rennes, France
+
+### New York University, Steinhardt School of Human Development 
+Masters of Art (MA): Food Systems
+
+Concentration: social inequity, research design, public policy, economics, statistics
+

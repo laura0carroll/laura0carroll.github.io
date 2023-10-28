@@ -8,6 +8,5 @@ output:
 
 # This is Laura's wesbite. 
 
+Welcome to my website! Please see my resume and contact information on the top right hand side and reach out with any questions. 
 
-## Link to resume page
-[Resume](resume.html)

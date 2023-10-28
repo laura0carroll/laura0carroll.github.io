@@ -8,4 +8,58 @@ output:
 
 # This page has plotly examples.   
 
+We're going to look at this data. 
 
+```{r}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+library(plyr)
+```
+
+```{r}
+data("rest_inspec")
+
+rest_inspec =
+  rest_inspec |>
+  select(boro, critical_flag, cuisine_description, violation_code, violation_description, score, zipcode, grade, grade_date) |>
+  group_by(boro) |>
+  filter(boro == "MANHATTAN") |>
+  mutate(boro = 
+recode(boro, "MANHATTAN" = "Manhattan"),
+critical_flag = factor(critical_flag, order = TRUE, levels = c("Not Applicable", "Not Critical", "Critical")),
+cuisine_description = as.factor(cuisine_description)
+) 
+
+rest_inspec =
+  rest_inspec |>
+  filter(cuisine_description == c("Italian", "Korean", "American",  "Japanese", "French", "African", "Chinese","Mexican"))
+
+
+```
+
+  
+### Scatterplot
+```{r warning=FALSE}
+  rest_inspec |>
+  mutate(text_label = str_c("Violation Code ", violation_code, "\nViolation Level ", critical_flag)) |>
+  plot_ly(
+    x = ~grade_date, y = ~score, type = "scatter", mode = "markers", color = ~cuisine_description ,text = ~text_label, alpha = 0.5)
+
+```
+
+### Boxplot
+```{r warning= FALSE}
+rest_inspec |> 
+  mutate(cuisine_description = fct_reorder(cuisine_description, score)) |> 
+  plot_ly(y = ~score, color = ~cuisine_description, type = "box", colors = "viridis")
+```
+
+### Barchar
+```{r warning=FALSE}
+rest_inspec |> 
+  count (cuisine_description) |> 
+  mutate(cuisine_description = fct_reorder(cuisine_description, n)) |> 
+  plot_ly(x = ~cuisine_description, y = ~n, color = ~cuisine_description, type = "bar", colors = "viridis")
+
+```

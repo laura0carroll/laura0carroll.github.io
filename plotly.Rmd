@@ -1,10 +1,4 @@
----
-title: "Plotly Examples"
-output: 
-  html_document:
-    toc: true
-    toc_float: true
----
+
 
 # This page has plotly examples.   
 
@@ -14,7 +8,6 @@ We're going to look at this data.
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
-library(plyr)
 ```
 
 ```{r}
@@ -33,10 +26,10 @@ cuisine_description = as.factor(cuisine_description)
 
 rest_inspec =
   rest_inspec |>
-  filter(cuisine_description == c("Italian", "Korean", "American",  "Japanese", "French", "African", "Chinese","Mexican"))
-
-
+  filter(cuisine_description == c("Italian", "Korean", "American", "Japanese", "French", "African", "Chinese","Mexican"))
 ```
+
+
 
   
 ### Scatterplot
@@ -56,10 +49,17 @@ rest_inspec |>
 ```
 
 ### Barchar
-```{r warning=FALSE}
-rest_inspec |> 
-  count (cuisine_description) |> 
-  mutate(cuisine_description = fct_reorder(cuisine_description, n)) |> 
-  plot_ly(x = ~cuisine_description, y = ~n, color = ~cuisine_description, type = "bar", colors = "viridis")
+
+```{r}
+bar_ggplot = 
+  rest_inspec |>
+  count (cuisine_description) |>   
+  mutate(cuisine_description = fct_reorder(cuisine_description, n)) |>
+  ggplot(aes(x = cuisine_description, y = n, color = cuisine_description)) + geom_col() + labs(
+    title = "Number of Violations per Restaurant Style",
+    subtitle = "Manhattan Restaurants"
+  )
+
+ggplotly(bar_ggplot)
 
 ```
